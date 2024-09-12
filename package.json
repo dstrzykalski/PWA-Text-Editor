@@ -4,12 +4,12 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start:dev": "",
-    "start": "",
-    "server": "",
-    "build": "",
-    "install": "",
-    "client": ""
+    "start:dev": "npm run server",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "build": "npm run client && npm run server",
+    "install": "npm install",
+    "client": "npm start"
   },
   "keywords": [],
   "author": "",
