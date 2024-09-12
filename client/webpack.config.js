@@ -41,5 +41,26 @@ module.exports = () => {
 
 
 // TODO: Add and configure workbox plugins for a service worker and manifest file.
-// ?
-
+plugins: [
+  new HtmlWebpackPlugin({
+    template: './src/index.html',
+    filename: 'index.html',
+  }),
+  new WebpackPwaManifest({
+    name: 'PWA Text Editor',
+    short_name: 'Text Editor',
+    description: 'A progressive web app text editor',
+    background_color: '#ffffff',
+    theme_color: '#000000',
+    icons: [
+      {
+        src: path.resolve('src/assets/icon.png'),
+        sizes: [96, 128, 192, 256, 384, 512],
+        destination: path.join('assets', 'icons'),
+      },
+    ],
+  }),
+  new InjectManifest({
+    swSrc: './src/service-worker.js',
+  }),
+],

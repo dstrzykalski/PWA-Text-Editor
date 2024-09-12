@@ -2,6 +2,11 @@
 
 Challenge 15 - Daved Strzykalski
 
+## Features
+
+In Browser Text Editor Built using PWA Model.
+Deployed Using Render.
+
 ## Your Task
 
 As you have progressed through this course, you have put together a number of impressive projects that you can show off to potential employers. This project is no exception; in fact, it features some of the most impressive expressions of the concepts you have learned so far.
