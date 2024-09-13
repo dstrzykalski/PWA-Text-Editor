@@ -2,6 +2,12 @@
 
 Challenge 15 - Daved Strzykalski
 
+In This Challenge we were tasked with altering and expanding upon starter code given to us in order to make the client side of the Text Editor Applications Functional.
+
+## Deployed Link
+
+<>
+
 ## Features
 
 In Browser Text Editor Built using PWA Model.
