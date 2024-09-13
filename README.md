@@ -14,6 +14,12 @@ In Browser Text Editor Built using PWA Model.
 Incorporates WebPack Plugin
 Deployed Using Render.
 
+## Issues
+
+As of now the App fails to generate a manifest.json despite the configuration file seemingly set up correctly.
+
+The App Contains ill the Code which I believe is required but as of now does not function properly.
+
 ## Your Task
 
 As you have progressed through this course, you have put together a number of impressive projects that you can show off to potential employers. This project is no exception; in fact, it features some of the most impressive expressions of the concepts you have learned so far.
