@@ -15,52 +15,45 @@ module.exports = () => {
       path: path.resolve(__dirname, 'dist'),
     },
     plugins: [
-      
+      new HtmlWebpackPlugin({
+        template: './index.html',
+        title: 'Text-Editor'
+      }),
+      new GenerateSW(),
+      new WebpackPwaManifest({
+        name: 'Text-Editor',
+        short_name: 'Text-Editor',
+        description: 'Edit Different Text',
+        start_url: '/',
+        publicPath: '/',
+        icons: [
+          {
+            src: path.resolve('src/images/logo.png'),
+            sizes: [96, 128, 192, 256, 384, 512],
+            destination: path.join('assets', 'icons'),
+          },
+        ],
+      }),
     ],
 
     module: {
       rules: [
         {
-          test: /\.css$/,
+          test: /\.css$/i,
           use: ['style-loader', 'css-loader'],
         },
         {
-          test: /\.js$/,
-          exclude: /node_modules/,
+          test: /\.m?js&/,
+          exclude: /(node_modules|bower_components)/,
           use: {
-            loader: 'babel-loader',
+            loader: "babel-loader",
             options: {
-              presets: ['@babel/preset-env'],
-            },
-          },
-        },
+              presets: ['@babel/preset-env']
+            }
+          }
+        }
       ],
     },
   };
 };
 
-
-// TODO: Add and configure workbox plugins for a service worker and manifest file.
-plugins: [
-  new HtmlWebpackPlugin({
-    template: './src/index.html',
-    filename: 'index.html',
-  }),
-  new WebpackPwaManifest({
-    name: 'PWA Text Editor',
-    short_name: 'Text Editor',
-    description: 'A progressive web app text editor',
-    background_color: '#ffffff',
-    theme_color: '#000000',
-    icons: [
-      {
-        src: path.resolve('src/assets/icon.png'),
-        sizes: [96, 128, 192, 256, 384, 512],
-        destination: path.join('assets', 'icons'),
-      },
-    ],
-  }),
-  new InjectManifest({
-    swSrc: './src/service-worker.js',
-  }),
-],
