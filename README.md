@@ -6,11 +6,12 @@ In This Challenge we were tasked with altering and expanding upon starter code g
 
 ## Deployed Link
 
-<>
+<https://pwa-text-editor-3-5wel.onrender.com>
 
 ## Features
 
 In Browser Text Editor Built using PWA Model.
+Incorporates WebPack Plugin
 Deployed Using Render.
 
 ## Your Task
