@@ -7,7 +7,7 @@
     "start:dev": "npm run server",
     "start": "node server.js",
     "server": "nodemon server.js",
-    "build": "npm run client && npm run server",
+    "build": "webpack --mode production",
     "install": "npm install",
     "client": "npm start"
   },

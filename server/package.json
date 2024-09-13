@@ -13,6 +13,8 @@
         "express": "^4.21.0"
     },
     "devDependencies": {
-        "nodemon": "^2.0.22"
+        "nodemon": "^2.0.22",
+        "webpack": "^5.94.0",
+        "webpack-pwa-manifest": "^4.3.0"
     }
 }
