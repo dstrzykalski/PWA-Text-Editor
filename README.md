@@ -20,6 +20,10 @@ As of now the App fails to generate a manifest.json despite the configuration fi
 
 The App Contains ill the Code which I believe is required but as of now does not function properly.
 
+## Resources
+
+This project was made with the help of several resources including Online search results such as stack overflow, w3 schools etc., Files from class content in the related modules and various quick search results through the Xpert Learning Assistant, Google and Youtube. As well as Documentation provided from the services used, Render, WebPack, Etc.
+
 ## Your Task
 
 As you have progressed through this course, you have put together a number of impressive projects that you can show off to potential employers. This project is no exception; in fact, it features some of the most impressive expressions of the concepts you have learned so far.
